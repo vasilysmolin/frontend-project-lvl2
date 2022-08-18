@@ -1,0 +1,36 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "front project 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gendiff": "bin/gendiff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilysmolin/frontend-project-lvl2.git"
+  },
+  "keywords": [
+    "js",
+    "test",
+    "differ"
+  ],
+  "author": "vasily smolin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasilysmolin/frontend-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/vasilysmolin/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "jest": "^28.1.3"
+  }
+}
