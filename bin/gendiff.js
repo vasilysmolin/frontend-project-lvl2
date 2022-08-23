@@ -5,11 +5,12 @@ import {program} from 'commander';
 
 program
   .arguments('<filepath1> <filepath2>')
-  .description('Two files difference')
+  .description('Compares two configuration files and shows a difference')
   .option('-f, --format [type]', 'output', 'stylish')
-  .action((filepath1, filepath2) => {
-    console.log(genDiff(filepath1, filepath2, program.opts().format));
-  })
   .version('1.0.0')
-  .parse(process.argv)
-;
+  .parse(process.argv);
+
+const { args } = program;
+const { format } = program.opts();
+
+console.log(genDiff(args[0], args[1], format));
