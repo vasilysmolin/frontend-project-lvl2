@@ -1,3 +1,6 @@
+install:
+	npm install
+
 test:
 	npm test
 
@@ -7,5 +10,5 @@ test-coverage:
 lint:
 	npx eslint .
 
-install:
-	npm install
+lint-fix:
+	npx eslint --fix .

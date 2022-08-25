@@ -1,4 +1,4 @@
-import formatStylish from './stylish.js';
+import formatStylish from './stylish';
 
 const formatters = {
   stylish: formatStylish,

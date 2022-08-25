@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import genDiff from '../index.js';
-import {program} from 'commander';
+import { program } from 'commander';
+import genDiff from '../index';
 
 program
   .arguments('<filepath1> <filepath2>')
