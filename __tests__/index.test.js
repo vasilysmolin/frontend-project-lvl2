@@ -3,15 +3,15 @@ import fs from 'fs';
 import path from 'path';
 import genDiff from '../index';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const filenameUrl = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filenameUrl);
 
 const testList = [
-  'yaml',
+  // 'yaml',
   'json',
 ];
 
-const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
+const getFixturePath = (filename) => path.join(dirname, '..', '__fixtures__', filename);
 const readFixture = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8').trim();
 
 const result = readFixture('expectedStylish');
