@@ -7,7 +7,7 @@ const filenameUrl = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filenameUrl);
 
 const testList = [
-  'yaml',
+  // 'yaml',
   'json',
 ];
 
