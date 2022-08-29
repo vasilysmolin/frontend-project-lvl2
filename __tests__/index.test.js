@@ -15,6 +15,7 @@ const getFixturePath = (filename) => path.join(dirname, '..', '__fixtures__', fi
 const readFixture = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8').trim();
 
 const result = readFixture('expectedStylish');
+const plainResult = readFixture('expectedPlain');
 
 describe('gendiff', () => {
   test.each(testList)('gendiff %s', (format) => {
@@ -22,5 +23,6 @@ describe('gendiff', () => {
     const filepath2 = getFixturePath(`file2.${format}`);
     expect(genDiff(filepath1, filepath2)).toEqual(result);
     expect(genDiff(filepath1, filepath2, 'stylish')).toEqual(result);
+    expect(genDiff(filepath1, filepath2, 'plain')).toEqual(plainResult);
   });
 });
