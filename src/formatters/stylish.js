@@ -1,4 +1,5 @@
 import _ from 'lodash';
+
 const indent = (depth, spacesCount = 4) => ' '.repeat(depth * spacesCount - 2);
 
 const stringify = (data, depth, mapNodes) => {
@@ -6,7 +7,7 @@ const stringify = (data, depth, mapNodes) => {
     return String(data);
   }
   const result = Object.entries(data)
-      .map(([key, value]) => mapNodes.unchanged({ key, value }, depth + 1));
+    .map(([key, value]) => mapNodes.unchanged({ key, value }, depth + 1));
   return `{\n${result.join('\n')}\n${indent(depth)}  }`;
 };
 
