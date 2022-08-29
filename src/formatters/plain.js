@@ -1,5 +1,4 @@
 const stringify = (value) => {
-
   if (value === null) {
     return value;
   }
@@ -16,7 +15,6 @@ const stringify = (value) => {
 };
 const propertyName = (property, pathParents) => [...pathParents, property].join('.');
 
-
 const mapNodes = {
   root: ({ children }, path, iter) => children.flatMap((node) => iter(node, path, iter)),
   add: (node, path) => `Property '${propertyName(node.key, path)}' was added with value: ${stringify(node.value)}`,
@@ -28,7 +26,6 @@ const mapNodes = {
   },
   unchanged: () => [],
 };
-
 
 const renderPlain = (tree) => {
   const iter = (node, currentPath) => mapNodes[node.type](node, currentPath, iter);

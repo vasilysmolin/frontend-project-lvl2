@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-import builder from './builder';
-import formats from './formatters/index';
-import parse from './parsers';
+import builder from './builder.js';
+import formats from './formatters/index.js';
+import parse from './parsers.js';
 
 const fullPath = (filepath) => path.resolve(process.cwd(), filepath);
 const getFormat = (filepath) => path.extname(filepath).slice(1);
