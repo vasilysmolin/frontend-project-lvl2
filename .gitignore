@@ -2,4 +2,6 @@
 coverage/
 build/
 file1.json
+file1.yaml
 file2.json
+file2.yaml
