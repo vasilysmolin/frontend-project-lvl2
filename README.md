@@ -11,10 +11,10 @@
 * npm >= 6
 * make >= 3
 
-# Installation
+# Installation and start command
 
 * `make setup` install utils
-* `gendiff -h` start differ
+* `gendiff -f plain file1.json file2.json` start differ from files file1.json and file2.json
 
 # Command
 
@@ -23,10 +23,14 @@
 
 ## Demo
 
-*json files (formats:stylish, plan, json)*
+*help command*
+
+[![asciicast](https://asciinema.org/a/PUTi5egu5fa3HZbv0G42xRdZK.svg)](https://asciinema.org/a/PUTi5egu5fa3HZbv0G42xRdZK)
+
+*json files (formats: stylish, plan, json)*
 
 [![asciicast](https://asciinema.org/a/DCgwAs7gd0MmI91Z0PJeO7rM7.svg)](https://asciinema.org/a/DCgwAs7gd0MmI91Z0PJeO7rM7)
 
-*yaml yml files (formats:stylish, plan, json)*
+*yaml yml files (formats: stylish, plan, json)*
 
 [![asciicast](https://asciinema.org/a/Vq1IiUMqXw9U3bGNMg0EcNYwm.svg)](https://asciinema.org/a/Vq1IiUMqXw9U3bGNMg0EcNYwm)
